@@ -1,0 +1,1 @@
+Removed src folder from the bootstrap folder from static as unusure about the functinality
