@@ -12,6 +12,7 @@ import requests
 app = Flask(__name__)
 
 @app.route('/')
+@app.route('/home')
 def homepage():
     return render_template("index.html")
 
@@ -20,6 +21,10 @@ def homepage():
 def nutrition():
     return render_template("nutrition.html")
 
+@app.route('/training')
+
+def training():
+    return render_template("training.html")
 
 if __name__ == "__main__":
     app.run(host = '0.0.0.0', debug=True)
